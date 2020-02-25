@@ -94,8 +94,8 @@ a:hover.cube__face--bottom {
 
 
 @-webkit-keyframes spinCube {
-  0% { transform: translateZ(-100px) rotateX(  0deg) rotateY(  0deg); }
-50% { transform: translateZ(-100px) rotateX(360deg) rotateY(360deg); }
+  0% { -webkit-transform: translateZ(-100px) rotateX(  0deg) rotateY(  0deg); }
+50% { -webkit-transform: translateZ(-100px) rotateX(360deg) rotateY(360deg); }
 }
 
 .cube__face {
