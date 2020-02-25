@@ -185,11 +185,19 @@ a {
   @media screen and (max-width: 991.98px) {
       .page--intro { background-size: inherit; }
       .first-open{display:none;}
+      .modal-style{margin-right: 1px; margin-left: 1px;}
+      h1{font-size: 30px;}
+      .accordion{font-size: 30; margin-left: 1px;}
     }
 
   
     @media screen and (min-width: 991.98px) {
       .second-open{display:none;}
+      
+    }
+
+    @media screen and (min-width: 991.98px) {
+
     }
   
 
@@ -228,7 +236,10 @@ a {
 }
 
 
-
+.modal-style{
+  margin-right: 5px; 
+  margin-left: 5px;
+}
 
 
 
