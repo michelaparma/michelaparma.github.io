@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width"/>
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  <script src="utils.js"></script>
+
+  <title>Michela Parma</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body class="page--intro">
+
+  <!--------------------------------------------------NAVBAR---------------------------------------->
+  <nav id="start" class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding: 5px; background-color: black !important;">
+      
+    <div class="logo-index">
+      <a class="index-button" >
+        <div>
+        <img class="logo" src="images/loghino.png" style="width:30px; margin-left:10px;">
+        </div>
+      </a>
+    </div>
+    
+    <a class="index-button second-open" style="color: white; font-family: basis; font-size: 20px; text-indent: 1em;">Michela Parma</a>
+      
+    <button class="navbar-toggler" type="button" data-target="#navbarNav" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" aria-controls="navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+      
+          
+            <a class="nav-link dropdown-toggle first-open" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white; font-family: basis; font-size: 22px; margin-left:10px;">Michela Parma</a>
+              <div class="dropdown-menu first-open" style="font-family: basis;">
+                <a class="btn dropdown-item" data-toggle="modal" data-target="#michela">Who am I?</a>
+                   <div class="dropdown-divider"></div> 
+                   <a class="btn dropdown-item" data-toggle="modal" data-target="#portfolio">My portfolio</a>
+                   <div class="dropdown-divider"></div>
+                   <a class="btn dropdown-item" data-toggle="modal" data-target="#skill">My skills</a>
+                   <div class="dropdown-divider"></div>
+                   <a class="btn dropdown-item" data-toggle="modal" data-target="#cv">My resume</a>
+                   <div class="dropdown-divider"></div>
+                   <a class="btn dropdown-item" data-toggle="modal" data-target="#contacts">Contacts</a>
+                </div>
+
+            <a class="nav-link second-open" data-toggle="modal" data-target="#michela"  role="button"  aria-haspopup="true" aria-expanded="false" style="color: white; font-family: basis; font-size: 15px; margin-left:20px">Who am I?</a>
+            <a class="nav-link second-open" data-toggle="modal" data-target="#portfolio"  role="button"  aria-haspopup="true" aria-expanded="false" style="color: white; font-family: basis; font-size: 15px; margin-left:20px">My portfolio</a>
+            <a class="nav-link second-open" data-toggle="modal" data-target="#skill"  role="button"  aria-haspopup="true" aria-expanded="false" style="color: white; font-family: basis; font-size: 15px; margin-left:20px">My skills</a>
+            <a class="nav-link second-open" data-toggle="modal" data-target="#cv"  role="button"  aria-haspopup="true" aria-expanded="false" style="color: white; font-family: basis; font-size: 15px; margin-left:20px">My resume</a>
+            <a class="nav-link second-open" data-toggle="modal" data-target="#contacts"  role="button"  aria-haspopup="true" aria-expanded="false" style="color: white; font-family: basis; font-size: 15px; margin-left:20px">Contacts</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+<!--FINE NAVBAR-->
+
+
+
+
+<!--CUBE-->
+  <section class="content" id="content">
+
+    
+      <div class="scene scene--hero">
+        <div class="cube cube--hero is-spinning">
+          
+          <div><a class="btn cube__face cube__face--front" data-toggle="modal" data-target="#michela">Who am I?</a></div>
+          <div><a class="btn cube__face cube__face--right" data-toggle="modal" data-target="#cv">Resume</a></div>
+          <div class="cube__face cube__face--back"></div>
+          <div><a class="btn cube__face cube__face--left" data-toggle="modal" data-target="#contacts">Contacts</a></div>
+          <div><a class="btn cube__face cube__face--top" data-toggle="modal" data-target="#portfolio">Portfolio</a></div>
+          <div><a class="btn cube__face cube__face--bottom" data-toggle="modal" data-target="#skill">My skills</a></div>
+        </div>
+      </div>
+
+      <!-- Modal Who am I-->
+      <div class="modal fade" id="michela" role="dialog">
+        <div class="modal-dialog modal-lg">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Who am I?</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="margin-right: 20px; margin-left: 20px;">
+              <img src="images/mp-circle.png" style="width:200px; margin-left: 30px; margin-bottom:20px" align="right"> <p>I am Michela Parma, student of <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" target="_blank"><i><u>Digital Humanities and Digital Knowledge</u></i></a> at the University of Bologna.</p> <p>Creativity, curiosity and interest in design have led me to this creative and communication medium that is the web. My course of study has changed a lot over the years. I have gone from love for architecture to love for History. I have never denied either of them because both have allowed me to understand what I really like to do: create websites and enrich them with content.
+              On the one hand the sensitivity for design, color matching and the choice of images, and on the other hand the skills of historical research. <br> I proudly call myself Brutalist lover. Brutalism is a design current that applies to both architecture and web development : geometric, rough and visually heavy elements that are reflected in my creative choices</p>
+              
+              <h2>What I love about web design</h2>
+                  <p>I like to see how a project comes to life, from the original idea to the design on paper and finally to the technological implementation. I like to watch the project from start to finish, and have people test the finished product. I like to study human behavior in relation to computers, the conscious and subconscious choices of people using a tool and the needs of users. Finally, I like the infinite possibilities offered by digital support.</p>
+              
+                  <h2>Other interests</h2>
+                   <p>I like singing, creating tunes, acting, baking cakes and I love chihuahuas.
+                     
+                    </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" style="font-family: basis; font-size: 20px;text-transform: uppercase;">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+      <!-- Modal CV-->
+      <div class="modal fade" id="cv" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">My Resume</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" style="font-family: basis; font-size: 20px;text-transform: uppercase;">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Modal Contact me-->
+      <div class="modal fade" id="contacts" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">My contacts</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>You can contact me at: 
+                <ul>
+                <li><a href="mailto:michelaparma95@gmail.com" style="font-family: modern;">michelaparma95@gmail.com</a></li>
+                <li><a href="mailto:michela.parma4@studio.unibo.it" style="font-family: modern;">michela.parma4@studio.unibo.it</a></li>
+              </ul>
+            </p>
+            <p>
+              You can also found me on <a href="https://www.linkedin.com/in/michela-parma-79a20818a/" class="link" target= "_blank"><u>LinkedIn</u></a> and on <a href="https://github.com/michelaparma" target= "_blank"><u>GitHub</u>.</a>
+            </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" style="font-family: basis; font-size: 20px;text-transform: uppercase;">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+      <!-- Modal My portfolio-->
+      <div class="modal fade" id="portfolio" role="dialog">
+        <div class="modal-dialog modal-lg">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">My portfolio</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+          
+              <button class="accordion"><img src="images/parallels.png" style="width:40px; margin-right: 20px;">Parallels</button>
+              <div class="panel">
+               <p style="margin-top:10px;">Available at <a href="https://parallels-dhdk.github.io/" target="_blank"><u>parallels-dhdk.github.io/</u></a></p>
+                <p>Project developed for the course of <i>Information Modeling and Web Technologies</i> (University of Bologna) in collaboration with my team. The aim is to represent the evolution of news throughout history and to foresee future developments. You can choose in which historical style to read the newspaper.
+                </p>
+              </div>
+
+              <hr>
+
+              <button class="accordion"><img src="images/fellini.png" style="width:40px; margin-right: 20px;">La dolce vita</button>
+              <div class="panel">
+                <p style="margin-top:10px;">Available at <a href="https://fellini-lod.github.io/" target="_blank"><u>fellini-lod.github.io/</u></a></p>
+                <p> Project developed for the course of <i>Knowledge Organization and Digital Methods in the Cultural Heritage Domain</i> (University of Bologna) in collaboration with my team. For the 60th anniversary of the release of the movie "La Dolce Vita", a Link Open Data model has been implemented. It focuses on the production and distribution of this cult movie directed by Federico Fellini in 1960.
+                </p>
+              </div>
+
+              <hr>
+
+              <button class="accordion"><img src="images/nice.png" style="width:45px; margin-right: 20px;">Nice to MET you</button>
+              <div class="panel">
+                <p style="margin-top:10px;">Available at <a href="https://nicetometyou.github.io/" target="_blank"><u>nicetometyou.github.io/</u></a></p>
+                <p>Project developed for the course of <i>Intangible Artifacts, Cultural Heritage and Multimedia</i> (University of Bologna). It is a project for the redevelopment of the Ethnographic Museum of the Customs and Traditions of the People of Romagna (MET) has been designed to digitize some of its contents. In particular, a 3D animation short film has been conceived to explain the rust printing technique.</p>
+              </div>
+
+              <hr>
+
+              <button class="accordion"><img src="images/divo.png" style="width:45px; margin-right: 20px;">DIV-O</button>
+              <div class="panel">
+                <p style="margin-top:10px;">Available at <a href="https://div-o.github.io/" target="_blank"><u>div-o.github.io/</u></a></p> 
+                <p>Project developed for the course of <i>Knowledge Representation and Extraction</i> (University of Bologna) in collaboration with my team. DIV-O stands for Dante Inferno V - Ontology. The project presents a tool to explore the Canto V through four differet editions of Divina commedia, according to characters and places, both real and fictional, and literary references present in the Canto. It's also possible to analise the relations identified in the Canto V through the Knowledge Graph.</p>
+              </div>
+
+              <hr>
+
+              <button class="accordion"><img src="images/007.png" style="width:45px; margin-right: 20px;">007forArt</button>
+              <div class="panel">
+                <p style="margin-top:10px;">Available at <a href="https://www.canva.com/design/DADqmtd-788/vLrXPKPKGAY5oViOvsJVRA/view?utm_content=DADqmtd-788&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank"><u>this link.</u></a></p> 
+                <p>It is a serious game designed to make known the history of the Italian Monument Man, Rodolfo Siviero. The game consists of an escape room located inside Casa Siviero, in Florence, where players are called to act as secret collaborators of Siviero to save an important Italian work of art from the capture of the Nazis. Through a series of puzzles and enigmas to solve, participants will have to contact the authorities to hide the work and conclude the game.</p>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" style="font-family: basis; font-size: 20px;text-transform: uppercase;">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Modal My skills-->
+      <div class="modal fade" id="skill" role="dialog">
+        <div class="modal-dialog ">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">My skills</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="margin-right: 20px; margin-left: 5px;">
+
+              <h1>Front-end development</h1>
+                <img src="images/html.png" style="width:70px; margin-right: 20px; margin-top: 10px; display:inline-block;">
+                <img src="images/css.png" style="width:50px; margin-right: 20px; margin-top: 10px; display:inline-block;">
+                <img src="images/bootstrap.png" style="width:50px; margin-right: 20px; margin-top: 10px; display:inline-block;">
+                <img src="images/js.png" style="width:50px; margin-right: 20px; margin-top: 10px; display:inline-block;">
+            
+              <p style="margin-top:20px;">Knowledge bla bla bla </p>
+
+              <hr>
+
+              <h1>Programming languages</h1>
+              <img src="images/python.png" style="width:80px; margin-right: 20px; margin-top: 10px;" align="left" /><p>Knowledge bla bla bla Knowledge bla bla blaKnowledge bla bla blaKnowledge bla bla bla Knowledge bla bla bla Knowledge bla bla bla Knowledge bla bla bla Knowledge bla bla blaKnowledge bla bla blaKnowledge bla bla blaKnowledge bla bla blaKnowledge bla bla bla </p>
+              
+              <hr>
+
+              <h1>Back-end development</h1>
+              <img src="images/flask.png" style="width:130px; margin-right: 20px; margin-top: 10px;" align="left" />
+              <p >Knowledge bla bla bla Knowledge bla bla blaKnowledge bla bla blaKnowledge bla bla bla Knowledge bla bla bla Knowledge bla bla bla Knowledge bla bla bla Knowledge bla bla blaKnowledge bla bla blaKnowledge bla bla blaKnowledge bla bla blaKnowledge bla bla bla </p>
+
+              <hr>
+
+              <h1>Design sensitive</h1>
+              <p>bla bla bla</p>
+
+              <hr>
+
+              <h1>Teamwork</h1>
+              <p>bla bla bla</p>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" style="font-family: basis; font-size: 20px;text-transform: uppercase;">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    
+
+
+
+
+<div class="footer">
+<div class="copyright">
+<p style="color: #bfbfbf; text-align: center; font-family: basis !important;font-size: 16px">© Copyright 2020 Michela Parma - All Rights Reserved</p>
+</div>
+</div> 
+
+
+  
+
+<!--accordion script-->
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+  </script>
+  
+
+</body>
+</html>
