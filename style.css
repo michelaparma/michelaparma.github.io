@@ -91,7 +91,10 @@ a:hover.cube__face--bottom {
   animation: spinCube 20s infinite cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
+@keyframes spinCube {
+    0% { transform: translateZ(-100px) rotateX(  0deg) rotateY(  0deg); }
+  50% { transform: translateZ(-100px) rotateX(360deg) rotateY(360deg); }
+}
 
 @-webkit-keyframes spinCube {
   0% { -webkit-transform: translateZ(-100px) rotateX(  0deg) rotateY(  0deg); }
