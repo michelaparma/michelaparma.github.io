@@ -194,7 +194,7 @@ a {
       .modal-style{margin-right: 1px; margin-left: 1px;}
       h1{font-size: 30px;}
       .accordion{font-size: 30px; margin-left: 0px;}
-      .michela-circle{width:50px; margin-left: 20px; margin-bottom:10px;}
+      .michela-circle{display: none;}
     }
 
   
