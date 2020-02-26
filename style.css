@@ -193,7 +193,8 @@ a {
       .first-open{display:none;}
       .modal-style{margin-right: 1px; margin-left: 1px;}
       h1{font-size: 30px;}
-      .accordion{font-size: 30px; margin-left: 0px;}
+      .modal-body-accordion{margin-left:0px;}
+      .accordion{font-size: 30px;}
       .michela-circle{display: none;}
     }
 
