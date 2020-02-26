@@ -265,5 +265,10 @@ a {
 .cv{
   font-family: roboto;
   font-size: 15px;
+  margin-top:10px;
 }
 
+.cv-images{
+  width:40px; 
+  margin-right: 20px;
+}
