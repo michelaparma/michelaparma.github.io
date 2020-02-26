@@ -17,6 +17,7 @@ src: url("font/Roboto-Light.ttf") format('truetype');}
 
 * { box-sizing: border-box; }
 .page--intro{
+  background-color: #000000;
   background-image: url("images/805.jpg");
   background-size: cover;
   height: 100%;
@@ -273,3 +274,44 @@ a {
   width:40px; 
   margin-right: 20px;
 }
+
+
+
+
+
+.cr {
+    width: 200px;
+    padding: 16px;
+    position: absolute;
+    text-align: center;
+    color: #f0f0f0;
+    z-index: 1;
+  }
+  
+  .cr-sticky {
+    position: fixed;
+  }
+  
+  /* Positions */
+  
+  .cr-top    { top: 25px; }
+  .cr-bottom { bottom: 25px; }
+  .cr-left   { left: -50px; }
+  .cr-right  { right: -50px; }
+  
+  /* Rotations */
+  
+  .cr-top.cr-left,
+  .cr-bottom.cr-right {
+    transform: rotate(-45deg);
+  }
+  
+  .cr-top.cr-right,
+  .cr-bottom.cr-left {
+    transform: rotate(45deg);
+  }
+  
+  /* Colors */
+.cr-color      { background-color: 	#C604C7; }
+ 
+  
