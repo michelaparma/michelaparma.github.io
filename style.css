@@ -252,7 +252,18 @@ a {
   margin-bottom:20px;
 }
 
+.michela-circle-cv{
+  width:150px; 
+  
+}
+
 .portfolio-images{
   width:40px; 
   margin-right: 20px;
 }
+
+.cv{
+  font-family: roboto;
+  font-size: 15px;
+}
+
