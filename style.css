@@ -197,11 +197,13 @@ a {
       .accordion{font-size: 30px !important;}
       .michela-circle{width: 130px !important; margin-bottom:1px !important;}
       .portfolio-images{width: 35px !important; margin-right: 10px !important;}
+      .first-ribbon{display:none;}
     }
 
   
     @media screen and (min-width: 991.98px) {
       .second-open{display:none;}
+      .second-ribbon{display: none;}
     }
 
 
@@ -277,11 +279,11 @@ a {
 
 
 
-
+/*Lateral ribbon*/
 
 .cr {
     width: 200px;
-    padding: 16px;
+    padding: 10px;
     position: absolute;
     text-align: center;
     color: #f0f0f0;
@@ -291,6 +293,8 @@ a {
   .cr-sticky {
     position: fixed;
   }
+
+  
   
   /* Positions */
   
