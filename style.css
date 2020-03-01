@@ -188,6 +188,8 @@ a {
   background-color: #000000;
   height: 20px;}
 
+  
+
  
   @media screen and (max-width: 991.98px) {
       .page--intro { background-size: inherit; }
@@ -197,13 +199,13 @@ a {
       .accordion{font-size: 30px !important;}
       .michela-circle{width: 130px !important; margin-bottom:1px !important;}
       .portfolio-images{width: 35px !important; margin-right: 10px !important;}
-      .first-ribbon{display:none;}
+      .first-ribbon{display:none !important;}
     }
 
   
     @media screen and (min-width: 991.98px) {
-      .second-open{display:none;}
-      .second-ribbon{display: none;}
+      .second-open{display:none !important;}
+      .second-ribbon{display: none !important;}
     }
 
 
@@ -319,3 +321,39 @@ a {
 .cr-color      { background-color: 	#C604C7; }
  
   
+
+/*languages button*/
+
+
+.button_lang {
+  background-color: rgb(161, 156, 156); /*colore più chiaro*/
+  color: rgb(185, 16, 129);
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-family: basis;
+  font-size: 20px;
+
+    
+  -webkit-transition: background-color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out;
+  -ms-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+.button_lang:hover, .current_lang {
+  background-color: white;   
+  -webkit-transition: background-color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out;
+  -ms-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+ul li {
+  display: inline;
+}
+
+.lang{
+  position:fixed;
+  bottom:0;
+  margin-bottom:10px;
+}
